@@ -6,7 +6,7 @@ Untuk Raport yg ada keterangan lulus saat ini belum update.
 # Update trakhir tgl 31-Aug-2020
 1. Membuat background logo di raport.
 2. Memperbaiki bug di pencarian data untuk tarik siswa.
-3. -Membuat tampilan data siswa dengan fitur filter perkelas dan persemester.
+3. Membuat tampilan data siswa dengan fitur filter perkelas dan persemester.
 4. Membuat tampilan data siswa sesuai dengan data kelasnya.
 5. Mengedit deskripsi pada catatan guru untuk ditampilkan didalam raport.
 6. Mempuat fitur delete pada data mapel/pelajaran dengan menambahkan konfirmasi password milik admin.
