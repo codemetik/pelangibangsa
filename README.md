@@ -28,3 +28,6 @@ dan
    di file cover.php
    --> cover.php
        home->dashboard->cetak->cover.php
+# Update dengan remote ke server sekolah tgl 15-Sept-2020
+1. Menambah source code untuk edit table data_siswa_keluar
+2. Tgl keterangan siswa keluar pada rapot keterangan pindah siswa berhasil diperbaharui maupun tidak diberbarui (tgl dibiarkan sesuai tgl pengeluaran siswa).
