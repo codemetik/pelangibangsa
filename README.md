@@ -4,13 +4,13 @@ Aplikasi PelangiBangsa Saat ini sudah bisa mencetak raport untuk raport semester
 Untuk Raport yg ada keterangan lulus saat ini belum update.
 
 # Update trakhir tgl 31-Aug-2020
--Membuat background logo di raport.
--Memperbaiki bug di pencarian data untuk tarik siswa.
--Membuat tampilan data siswa dengan fitur filter perkelas dan persemester.
--Membuat tampilan data siswa sesuai dengan data kelasnya.
--Mengedit deskripsi pada catatan guru untuk ditampilkan didalam raport.
--Mempuat fitur delete pada data mapel/pelajaran dengan menambahkan konfirmasi password milik admin.
--Sama membuat fitur delete pada data mapel/pelajaran sesuai dengan kelas dan per semesternya dengan tambahan konfirmasi password milik admin juga.
+1. Membuat background logo di raport.
+2. Memperbaiki bug di pencarian data untuk tarik siswa.
+3. -Membuat tampilan data siswa dengan fitur filter perkelas dan persemester.
+4. Membuat tampilan data siswa sesuai dengan data kelasnya.
+5. Mengedit deskripsi pada catatan guru untuk ditampilkan didalam raport.
+6. Mempuat fitur delete pada data mapel/pelajaran dengan menambahkan konfirmasi password milik admin.
+7. Sama membuat fitur delete pada data mapel/pelajaran sesuai dengan kelas dan per semesternya dengan tambahan konfirmasi password milik admin juga.
 
 # Selesai. Terimakasih SEKOLAH PELANGI BANGSA,
 # Pamulang 31 Agustus 2020
