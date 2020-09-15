@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Sep 2020 pada 11.27
--- Versi server: 10.4.13-MariaDB
--- Versi PHP: 7.4.7
+-- Waktu pembuatan: 15 Sep 2020 pada 12.15
+-- Versi server: 10.4.14-MariaDB
+-- Versi PHP: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -330,7 +330,7 @@ CREATE TABLE `data_siswa_keluar` (
 --
 
 INSERT INTO `data_siswa_keluar` (`id_siswa_keluar`, `tgl_masuk_siswa`, `tgl_keluar_siswa`, `id_kelas`, `id_semester`, `id_siswa`, `nisn`, `nis`, `nama_siswa`, `jk`, `tempat_lahir`, `tanggal_lahir`, `id_agama`, `pend_sebelumnya`, `alamat_serta_didik`, `nama_ayah`, `nama_ibu`, `pekerjaan_ayah`, `pekerjaan_ibu`, `jalan`, `desa_kelurahan`, `kecamatan`, `kabupaten_kota`, `provinsi`, `no_telp_hp`, `nama_wali`, `pekerjaan_wali`, `alamat_wali`, `no_telp_hp_wali`, `tahun_ajaran_awal`, `tahun_ajaran_akhir`) VALUES
-('KEL0000001', '2020-04-19 12:23:14', '2020-04-27 09:53:14', 'KLS01', 'SM01', 'SIS0000004', '00042020', '00042020', 'Nadim Maskarim', 'L', 'Jakarta', '2020-04-01', 'agm01', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '2019', '2020');
+('KEL0000001', '2020-04-19 12:23:14', '2020-02-27 09:53:14', 'KLS01', 'SM01', 'Darren Luis Car', '00042020', '00042020', 'Nadim Maskarim', 'L', 'Jakarta', '2020-04-01', 'agm01', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '2019', '2020');
 
 -- --------------------------------------------------------
 
@@ -420,7 +420,8 @@ INSERT INTO `ekstrakurikuler` (`id_ekstra`, `no`, `kegiatan`) VALUES
 ('EKS020', '20', 'Komputer'),
 ('EKS021', '21', 'Bahasa Inggris'),
 ('EKS022', '22', 'Lainnya'),
-('EKS023', '23', 'Science');
+('EKS023', '23', 'Science'),
+('EKS024', '24', 'Ngaji');
 
 -- --------------------------------------------------------
 
@@ -4462,7 +4463,8 @@ INSERT INTO `tb_muatan_nilai` (`id_muatan`, `id_ekstra`, `teknik_muatan`) VALUES
 (159, 'EKS023', 'Muatan Nilai 7'),
 (160, 'EKS023', 'Muatan Nilai 8'),
 (161, 'EKS023', 'Muatan Nilai 9'),
-(162, 'EKS023', 'Muatan Nilai 10');
+(162, 'EKS023', 'Muatan Nilai 10'),
+(164, 'EKS024', 'Muatan');
 
 -- --------------------------------------------------------
 
@@ -5132,7 +5134,7 @@ ALTER TABLE `satuan_kkm`
 -- AUTO_INCREMENT untuk tabel `tb_muatan_nilai`
 --
 ALTER TABLE `tb_muatan_nilai`
-  MODIFY `id_muatan` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=163;
+  MODIFY `id_muatan` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=165;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)

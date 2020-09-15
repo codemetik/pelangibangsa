@@ -1,0 +1,12 @@
+1.  - Ubah Data sekolah
+      - /*[25-Aug 11.40.24][1 ms]*/ SHOW COLLATION; 
+      - Delete = /*[25-Aug 11.40.53][18 ms]*/ ALTER TABLE `pelangibangsa`.
+        `data_sekolah` DROP COLUMN `niy`, 
+        DROP COLUMN `tmpt_wkt_pemetaan_kd`, 
+        DROP COLUMN `tmpt_wkt_analisis_kkm`, 
+        DROP COLUMN `banyak_mulok_diberikan`;
+2.  - Ubah data satuan_kkm
+      - Kolom interval
+3. - Data user sudah bisa digunakan
+4. - Edit data harus menginputkan password dan confirm_password agat tidak berubah password saat proses simpan.
+
