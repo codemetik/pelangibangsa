@@ -11,8 +11,12 @@ $pdf->AddPage();
 if (isset($_POST['print'])) {
 	$idsk = $_POST['id_siswa_keluar'];
 	$alasan = $_POST['alasan'];
+    $tgl_keluar_siswa = $_POST['tgl_keluar_siswa'];
 
 include '../../../connect.php';
+
+$sqlup = mysqli_query($koneksi, "UPDATE data_siswa_keluar SET tgl_keluar_siswa = '".$tgl_keluar_siswa."' WHERE id_siswa_keluar = '".$idsk."'");
+
 $sqlkeluarsis = mysqli_query($koneksi, "SELECT * FROM data_siswa_keluar X INNER JOIN kelas Y ON y.id_kelas = x.id_kelas
 INNER JOIN semester Z ON z.id_semester = x.id_semester WHERE id_siswa_keluar = '".$idsk."'");
 $dtkel = mysqli_fetch_array($sqlkeluarsis);

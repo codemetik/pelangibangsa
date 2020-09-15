@@ -214,7 +214,7 @@ if (isset($_GET['idsk'])) {
 				</div>
 				<div class="form-group">
 					<div class="form-line">
-						<input type="text" name="tgl_keluar_siswa" class="form-control" value="<?= $dt_keluar['tgl_keluar_siswa']; ?>" readonly>
+						<input type="text" name="tgl_keluar_siswa" class="form-control" value="<?= $dt_keluar['tgl_keluar_siswa']; ?>">
 					</div>
 				</div>
 				<div class="form-group">
