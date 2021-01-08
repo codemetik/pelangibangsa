@@ -119,11 +119,11 @@ foreach ($dtsiswa as $alt => $almt) {
 
     $ortu = array(
         "8.     Nama Orang Tua" => "",
-        "               a. Ayah" => $row['nama_ayah'],
-        "               b. ibu" => $row['nama_ibu'],
+        "            a. Nama Ayah" => $row['nama_ayah'],
+        "            b. Nama Ibu" => $row['nama_ibu'],
         "9.     Pekerjaan Orang Tua" => "",
-        "               a. Ayah" => $row['pekerjaan_ayah'],
-        "               b. Ibu" => $row['pekerjaan_ibu'],
+        "            a. Pekerjaan Ayah" => $row['pekerjaan_ayah'],
+        "            b. Pekerjaan Ibu" => $row['pekerjaan_ibu'],
         "10.    Alamat Orang Tua" => "",
         "               Kelurahan/ Desa" => $row['desa_kelurahan'],
         "               Kecamatan" => $row['kecamatan'],
@@ -429,10 +429,7 @@ IF(rata_rata >= 80,' memiliki pengetahuan dan keterampilan cukup baik, untuk itu
 IF(h.nilai || i.nilai = 'A','spiritual dan sosial ananda berhasil meraih nilai yang sangat baik, Untuk itu selamat dan terus kembangkan sikap spiritual dan sosial yang ananda miliki. ',
 IF(h.nilai || i.nilai = 'B','spiritual dan sosial ananda memiliki potensi yang baik untuk di kembangkan.',
 IF(h.nilai || i.nilai = 'C','spiritual dan sosial ananda memiliki potensi yang harus terus ada peningkatan.',
-' spiritual dan sosial ananda perlu ada bimbingan dalam meraih nilai sikap yang lebih baik. '))),
-' dan Selamat ananda ',nama_siswa,' telah memperoleh ranking ', FIND_IN_SET(rata_rata, (SELECT GROUP_CONCAT(rata_rata ORDER BY rata_rata DESC) 
-FROM gabunganki3_ki4)),' di kelas.'
-) AS deskripsi, x.tahun_ajaran_awal, x.tahun_ajaran_akhir  
+' spiritual dan sosial ananda perlu ada bimbingan dalam meraih nilai sikap yang lebih baik. ')))) AS deskripsi, x.tahun_ajaran_awal, x.tahun_ajaran_akhir  
 FROM gabunganki3_ki4 X
 INNER JOIN per_prestasi Y ON y.id_kelas = x.id_kelas
 INNER JOIN ketidakhadiran a ON a.id_kelas = x.id_kelas
@@ -440,6 +437,10 @@ INNER JOIN nilai_raport_spiritual h ON h.id_kelas = x.id_kelas
 INNER JOIN nilai_raport_sosial i ON i.id_kelas = x.id_kelas
 WHERE x.id_siswa = '".$id_siswa."' AND x.id_kelas = '".$dtsq1['id_kelas']."' AND x.id_semester = '".$dtsq2['id_semester']."' AND x.tahun_ajaran_awal = '".$thawal."' AND x.tahun_ajaran_akhir = '".$thakhir."'
 GROUP BY x.id_siswa DESC");
+
+/* History Ranking : ,'dan Selamat ananda ',nama_siswa,' telah memperoleh ranking ', FIND_IN_SET(rata_rata, (SELECT GROUP_CONCAT(rata_rata ORDER BY rata_rata DESC) 
+FROM gabunganki3_ki4)),' di kelas.'
+*/
     while ($dtdes = mysqli_fetch_array($sran)) {
         $raysar[] = array(
         'id_siswa' => $dtdes['id_siswa'],

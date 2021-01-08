@@ -429,7 +429,7 @@ include "header.php";
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons col-indigo">layers</i>
-                            <span>INPUT SIKAP</span>
+                            <span>DATA SIKAP</span> <!--Input sikap dirubah menjadi Data-->
                         </a>
                         <ul class="ml-menu">
                             <li class="">
@@ -446,7 +446,7 @@ include "header.php";
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons col-indigo">layers</i>
-                            <span>INPUT KD PENGETAHUAN</span>
+                            <span>DATA KD PENGETAHUAN</span>
                         </a>
                         <ul class="ml-menu">
                             <li class="">
@@ -463,7 +463,7 @@ include "header.php";
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons col-indigo">layers</i>
-                            <span>INPUT KD KETERAMPILAN</span>
+                            <span>DATA KD KETERAMPILAN</span>
                         </a>
                         <ul class="ml-menu">
                             <li class="">

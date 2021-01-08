@@ -13,16 +13,16 @@ if (isset($_GET['mapel'])) {
 		<form action="" method="POST">
 			<div class="form-group form-float">
 				<div class="form-line">
-					<input type="text" name="user" class="form-control">
+					<input type="text" name="user" class="form-control" placeholder="Username Admin ..">
 				</div>
 			</div>
 			<div class="form-group form-float">
 				<div class="form-line">
-					<input type="text" name="password" class="form-control">
+					<input type="password" name="password" class="form-control" placeholder="Password .. ">
 				</div>
 			</div>
 			<div hidden>
-				<input type="password" name="id_mapel" value="<?= $id_mapel; ?>">
+				<input type="text" name="id_mapel" value="<?= $id_mapel; ?>">
 			</div>
 			<input type="submit" name="admin" value="Lanjut Proses Hapus" class="btn bg-indigo">
 			<a href="?page=hapus_mapel" class="btn bg-indigo">CENCEL</a>
